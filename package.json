@@ -1,7 +1,7 @@
 {
   "name": "hello-world-nodejs",
   "version": "1.0.0",
-  "description": "A simple Hello World Node.js server",
+  "description": "Node.js server that exits when the database source cannot be reached",
   "engines": {
     "node": ">=22"
   },
@@ -9,7 +9,14 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["hello", "world", "nodejs"],
+  "keywords": [
+    "nodejs",
+    "postgres",
+    "kubernetes"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
 }
